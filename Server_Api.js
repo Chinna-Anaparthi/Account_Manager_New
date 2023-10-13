@@ -19,7 +19,7 @@ mongoose
     console.log(error);
   });
 
-app.post('/RegularFieldWork-Post', (req, res) => {
+app.post('/RegularFieldWork', (req, res) => {
     Server.FieldworkPost(req, res, () => { });
 })
 
