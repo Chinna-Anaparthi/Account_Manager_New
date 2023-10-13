@@ -13,7 +13,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("hosting MongoDB Connected");
+    console.log("Account_Manager MongoDB Connected");
   })
   .catch((error) => {
     console.log(error);
