@@ -19,6 +19,9 @@ mongoose
     console.log(error);
   });
 
+app.post('/RegularFieldWork-Post', (req, res) => {
+    Server.FieldworkPost(req, res, () => { });
+})
 
 app.get('/RegularFieldWork-Get', (req, res) => {
     Server.FieldworkGet(req, res, () => { })
