@@ -20,10 +20,13 @@ mongoose
   });
 
 
-  app.get('/RegularFieldWork-Get', (req, res) => {
+app.get('/RegularFieldWork-Get', (req, res) => {
     Server.FieldworkGet(req, res, () => { })
 })
 
+app.put('/RegularFieldWork-Status-Update/:employeeId', (req, res) => {
+  Server.FieldworkStatusUpdate(req, res, () => { });
+})
 const port = process.env.PORT;
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
